@@ -1,0 +1,50 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265
+{\fonttbl\f0\froman\fcharset0 TimesNewRomanPSMT;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx9105\ri-69\pardirnatural
+
+\f0\fs24 \cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx9105\pardeftab720\ri-69
+\cf0 			
+\b \ul Department of Computer Science and Technology 7\up16 th \up0 Semester, 2013\
+
+\b0 \ulnone \
+ 					          
+\b \ul Compiler Design Laboratory\ulnone \
+
+\b0 \
+
+\b NAME
+\i  
+\i0\b0 : RAMIT DAS ; 
+\b CLASS ROLL 
+\b0 : 24 ; 
+\b ID 
+\b0 : 110510037\
+\
+							
+\b\fs26 Assignment 1
+\fs24 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\tx9105\pardeftab720\ri-69\sa240
+\cf0 Objective\
+	
+\b0 Familiarisation with LEX . Design of a basic lexical analyser. Maintaining a SYMBOL TABLE while doing so.\
+
+\b Key Issues/Features \
+	1. 
+\b0  Use of a lex file for the first time was indeed a learning experience. The power of a lex file is in its regular expression processing capabilities! It is able to extract lexemes from a stream of characters and give them their appropriate meaning.\
+	
+\b 2.  
+\b0 Use of a link list array as the hash table. Link list indicates the fact that collisions on my hash table were resolved by the technique of chaining. The Hash function used was an attempt of my own. It involved a division of each character by its ascii position finally multiplying it with a number proportional to the length of the word. Since the input programs on which we were to test our code was small I used a table of size 50.\
+	
+\b 3. 
+\b0 Each token was displayed in the lexical parsing phase. Identifiers were loaded into the hash-table. In case of a collision the possible location was displayed.\
+
+\b REMARKS \
+	1.
+\b0  \'91yytext\'92 as provided by lex was used to obtain the identifier lexemes.\
+	
+\b 2.  
+\b0 \'91yywrap\'92 was overridden. In this particular program it returns 1 that signals the end of the scanning.}
